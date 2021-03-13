@@ -1,0 +1,46 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+#wrapper{
+	
+}
+
+#page-container{
+	text-align: center;
+	min-height: 400px;
+}
+
+.product-banner{
+	width:500px;
+	margin: 30px auto;
+	padding:40px;
+	border: solid 5px lightgray;
+	opacity: 0.7;
+}
+.product-banner .product-name{
+	font-size: 2.5em;
+	padding-bottom: 10px;
+}
+.product-banner .product-summary{
+	margin-top: 40px;
+	font-size: 1.4em;
+}
+.product-banner .product-version{
+	margin-top:100px;
+	font-size: 0.8em;
+	font-weight: bolder;
+}
+
+#footer{
+	width:98%;
+	position:absolute;
+	bottom:0;
+	margin:auto;
+	text-align: center;
+	font-size: 0.9em;
+	line-height: 40px;
+	padding: 0px;
+}
+#footer a{
+	text-decoration: underline;
+}
