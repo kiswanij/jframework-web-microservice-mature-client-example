@@ -1,6 +1,6 @@
 package com.app.person;
 
-import com.jk.web.services.client.JKMatureServiceClient;
+import com.jk.services.client.JKMatureServiceClient;
 
 public class ServiceClient extends JKMatureServiceClient<Model>{
 
