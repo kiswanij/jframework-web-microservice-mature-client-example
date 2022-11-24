@@ -3,14 +3,14 @@ package com.app.person;
 import java.util.List;
 import java.util.Vector;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ViewScoped;
+import com.jk.web.faces.mb.JKWebController;
 
-import com.jk.web.faces.mb.JKManagedBean;
+import jakarta.faces.view.ViewScoped;
+import jakarta.inject.Named;
 
-@ManagedBean(name = "controller")
+@Named("controller")
 @ViewScoped
-public class Controller extends JKManagedBean {
+public class Controller extends JKWebController {
 	ServiceClient client=new ServiceClient();
 	Model model;
 	List<Model> modelList;
