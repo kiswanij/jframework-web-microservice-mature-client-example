@@ -11,7 +11,7 @@ This repository contains a _JKFramework-WebStack_ project that communicates with
 ## Project Main Contents 
 The repiository contains the following main contents: 
 1. Maven project with [pom.xml](pom.xml)
-  > *Note*: If you are using Eclipse, be sure to refresh your project (select your project→ right click→ Maven→ Update Project)
+  > :page_facing_up:*Note*: If you are using Eclipse, be sure to refresh your project (select your project→ right click→ Maven→ Update Project)
 2. [Config file](src/main/resources/config.properties)  
 3. [Java Model class](src/main/java/com/app/person/Model.java)    
 4. [Java ServiceClient class](src/main/java/com/app/person/ServiceClient.java) 
