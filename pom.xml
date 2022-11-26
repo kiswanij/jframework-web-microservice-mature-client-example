@@ -4,10 +4,17 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.jalalkiswani</groupId>
-		<artifactId>jk-webapp</artifactId>
+		<artifactId>jk-webapp-basic</artifactId>
 		<version>7.0.0-M1</version>
 	</parent>
 	<artifactId>jk-framework-web-microservice-mature-client-example</artifactId>
 	<packaging>war</packaging>
 
+	<dependencies>
+		<dependency>
+			<groupId>com.jalalkiswani</groupId>
+			<artifactId>jk-framework-service-client</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
 </project>
