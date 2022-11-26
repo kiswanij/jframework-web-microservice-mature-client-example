@@ -4,10 +4,16 @@ _Last updated: 2022-11-26_
 
 This repository contains a _JKFramework-WebStack_ example that communicates with a Mature microservice backend.
 
-## Pre-Requisites:
+## Prerequisites:
 - JDK 17+ Installed
 - [Create Mature Microservice](https://github.com/kiswanij/jk-framework-microservice-mature-example)
 - Run the Mature Microservice 
+
+## Usage:
+1. Clone the repository
+2. Import as Java project into your favorite IDE (`We use SpringToolSuite and Eclipse for Java EE developers`)
+3. Run `App` class.
+
 
 ## Project Main Contents 
 The repository  contains the following main contents: 
@@ -21,5 +27,6 @@ The repository  contains the following main contents:
 7. [Faces View](src/main/webapp/index.xhtml)   
 8. [Main java class](src/main/java/com/app/App.java)  
 
+## Screenshots
 Thats it, now run your App class, in few seconds your browser will open and you should see something like this:
 ![Screenshot](screenshots/home.png)
