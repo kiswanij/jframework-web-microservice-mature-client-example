@@ -3,7 +3,7 @@
 	xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://primefaces.org/ui">
 <h:head>
 	<f:facet name="first">
-		<title>Smart-Cloud Demo</title>
+		<title>JKFramework Demo</title>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="shortcut icon" type="image/x-icon" href="/resources/favicon.ico" />
@@ -16,9 +16,7 @@
 
 	<!-- App wide resources -->
 	<link rel="stylesheet" href="#{request.contextPath}/resources/app.css?reload=#{util.reloadRandom()}" type="text/css" media="all" />
-	<link rel="stylesheet" href="#{request.contextPath}/resources/primefaces/theme.css?reload=#{util.reloadRandom()}" type="text/css" media="all" />
 	<link rel="stylesheet" href="#{request.contextPath}/resources/primefaces/theme-fix.css?reload=#{util.reloadRandom()}" type="text/css" media="all" />
-	<link rel="stylesheet" href="#{util.path}page.css?reload=#{util.reloadRandom()}" type="text/css" media="all" />
 
 	<!-- Current page resources-->
 	<link rel="stylesheet" href="#{util.path}page.css?reload=#{util.reloadRandom()}" type="text/css" media="all" />
@@ -26,7 +24,13 @@
 </h:head>
 <h:body>
 	<div id="wrapper">
-		<ui:include src="inc/menu.xhtml" />
+		<h:form>
+			<p:autoUpdate />
+			<p:menubar>
+				<p:menuitem value="Home" url="/" icon="fa fa-home" />
+				<p:menuitem value="Person" url="/pages/person" icon="fa fa-user-friends" />
+			</p:menubar>
+		</h:form>
 		<div>
 			<h3>
 				<ui:insert name="page-title">Page Title</ui:insert>
@@ -35,7 +39,9 @@
 			<div id="page-container">
 				<ui:insert name="contents">main-contents-goes here</ui:insert>
 			</div>
-			<ui:include src="inc/footer.xhtml" />
+				<div id="footer">
+		Powered by <a href="https://frameworksmart-api.com">Smart-API JKFramework</a> 
+	</div>
 		</div>
 	</div>
 </h:body>
