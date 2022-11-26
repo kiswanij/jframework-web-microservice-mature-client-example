@@ -13,7 +13,7 @@ PrimeFaces and a Mature Microservices backend.
 Steps: 
 1. Maven project with [pom.xml](pom.xml)
   > *Note*: If you are using Eclipse, be sure to refresh your project (select your project→ right click→ Maven→ Update Project)
-2. [config file](src/main/resources/config.properties)  
+2. [Config file](src/main/resources/config.properties)  
 3. [Java Model class](src/main/java/com/app/person/Model.java)    
 4. [Java ServiceClient class](src/main/java/com/app/person/ServiceClient.java) 
 5. [Faces Controller](src/main/java/com/app/person/Controller.java) 
