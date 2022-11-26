@@ -2,7 +2,7 @@
 _Last updated: 2022-11-26_
 
 
-This repository contains a _JKFramework-WebStack_ project that communicates with a Mature microservice backend.
+This repository contains a _JKFramework-WebStack_ example that communicates with a Mature microservice backend.
 
 ## Pre-Requisites:
 - [Create Mature Microservice](https://github.com/kiswanij/jk-framework-microservice-mature-example)
