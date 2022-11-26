@@ -29,4 +29,5 @@ The repository  contains the following main contents:
 
 ## Screenshots
 Thats it, now run your App class, in few seconds your browser will open and you should see something like this:
+
 ![Screenshot](screenshots/home.png)
