@@ -2,10 +2,10 @@
 _Last updated: 2022-11-26_
 
 
-This repository contains a _JKFramework-WebStack_ project that communicates with the Mature microservice backend.
+This repository contains a _JKFramework-WebStack_ project that communicates with a Mature microservice backend.
 
 ## Pre-Requisites:
-- [Create Mature Microservice](https://framework.smart-api.com/tutorials/java-maven-tutorial.html)
+- [Create Mature Microservice](https://github.com/kiswanij/jk-framework-microservice-mature-example)
 - Run the Mature Microservice
 
 ## Project Main Contents 
