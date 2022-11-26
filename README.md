@@ -165,7 +165,58 @@ public class Controller extends JKWebController {
 	}
 }
 ```
-5- Create Facelets template at `src/main/webapp/WEB-INF/
+5- Create Facelets template at `src/main/webapp/WEB-INF/templates` with the following contents:
+```xml
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<f:facet name="first">
+		<title>JKFramework Demo</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" type="image/x-icon" href="/resources/favicon.ico" />
+	</f:facet>
+	<!-- Generic styles -->
+	<link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" media="all" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico|Raleway|Yanone+Kaffeesatz|Roboto" rel="stylesheet" media="all"
+		type="text/css" />
+
+	<!-- App wide resources -->
+	<link rel="stylesheet" href="#{request.contextPath}/resources/app.css?reload=#{util.reloadRandom()}" type="text/css" media="all" />
+	<link rel="stylesheet" href="#{request.contextPath}/resources/primefaces/theme-fix.css?reload=#{util.reloadRandom()}" type="text/css" media="all" />
+
+	<!-- Current page resources-->
+	<link rel="stylesheet" href="#{util.path}page.css?reload=#{util.reloadRandom()}" type="text/css" media="all" />
+	<script src="#{util.path}page.js?reload=#{util.reloadRandom()}" />
+</h:head>
+<h:body>
+	<div id="wrapper">
+		<h:form>
+			<p:autoUpdate />
+			<p:menubar>
+				<p:menuitem value="Home" url="/" icon="fa fa-home" />
+				<p:menuitem value="Person" url="/pages/person" icon="fa fa-user-friends" />
+			</p:menubar>
+		</h:form>
+		<div>
+			<h3>
+				<ui:insert name="page-title">Page Title</ui:insert>
+			</h3>
+			<hr />
+			<div id="page-container">
+				<ui:insert name="contents">main-contents-goes here</ui:insert>
+			</div>
+				<div id="footer">
+		Powered by <a href="https://frameworksmart-api.com">Smart-API JKFramework</a> 
+	</div>
+		</div>
+	</div>
+</h:body>
+
+</html>
+```
 
 6- Create JSF XHTML Page at `src/main/webapp/index.xhtml` view with the following contents:
 ```xml
