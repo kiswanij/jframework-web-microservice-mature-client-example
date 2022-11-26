@@ -2,8 +2,7 @@
 _Last updated: 2022-11-26_
 
 
-This repository contains a _JKFramework Web_ project simplifies building Java web applications based on JSF (Jakarta Faces 4) and 
-PrimeFaces and a Mature Microservices backend.
+This repository contains a _JKFramework-WebStack_ project that communicates with the Mature microservice backend.
 
 ## Pre-Requisites:
 - [Create Mature Microservice](https://framework.smart-api.com/tutorials/java-maven-tutorial.html)
