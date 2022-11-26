@@ -22,4 +22,4 @@ Steps:
 8. [Main java class](src/main/java/com/app/App.java)  
 
 Thats it, now run your App class, in few seconds your browser will open and you should see something like this:
-[Screenshot](screenshots/output.png)
+![Screenshot](screenshots/output.png).
