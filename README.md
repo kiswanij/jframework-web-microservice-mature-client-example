@@ -21,4 +21,4 @@ The repiository contains the following main contents:
 8. [Main java class](src/main/java/com/app/App.java)  
 
 Thats it, now run your App class, in few seconds your browser will open and you should see something like this:
-![Screenshot](screenshots/output.png).
+![Screenshot](https://user-images.githubusercontent.com/13691980/204082130-f4400514-a056-4acb-a2cf-02696590e924.png)
