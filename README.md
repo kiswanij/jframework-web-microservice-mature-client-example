@@ -16,7 +16,7 @@ The repiository contains the following main contents:
 3. [Java Model class](src/main/java/com/app/person/Model.java)    
 4. [Java ServiceClient class](src/main/java/com/app/person/ServiceClient.java) 
 5. [Faces Controller](src/main/java/com/app/person/Controller.java) 
-6. [Facelets template](src/main/webapp/WEB-INF/templates) 
+6. [Facelets template](src/main/webapp/WEB-INF/templates/default.xhtml) 
 7. [Faces View](src/main/webapp/index.xhtml)   
 8. [Main java class](src/main/java/com/app/App.java)  
 
