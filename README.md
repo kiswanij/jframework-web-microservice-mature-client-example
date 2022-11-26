@@ -10,7 +10,7 @@ PrimeFaces and a Mature Microservices backend.
 - Run the Mature Microservice
 
 ## Project Main Contents 
-Steps: 
+The repiository contains the following main contents: 
 1. Maven project with [pom.xml](pom.xml)
   > *Note*: If you are using Eclipse, be sure to refresh your project (select your project→ right click→ Maven→ Update Project)
 2. [Config file](src/main/resources/config.properties)  
