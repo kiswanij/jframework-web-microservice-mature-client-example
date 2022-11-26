@@ -12,7 +12,7 @@ PrimeFaces and a Mature Microservices backend.
 ## Create the Microservice 
 
 Steps: 
-1. Create Maven project with the following pom.xml:
+1. Create Maven project with the following `pom.xml`:
 ````xml
   <project xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -27,27 +27,17 @@ Steps:
     <packaging>war</packaging>
   </project>
 ````
----
-Note: If you are using Eclipse, be sure to refresh your project (select your project→ right click→ Maven→ Update Project)
----
 
-Create config file at src/main/resources/config.properties with the following contents:
+> *Note*: If you are using Eclipse, be sure to refresh your project (select your project→ right click→ Maven→ Update Project)
 
-app.services.persons.url=http://localhost:8080/app/persons
 
-hibernate.connection.driver_class = org.h2.Driver
-hibernate.connection.url = jdbc:h2:file:./h2db.data
-hibernate.dialect = org.hibernate.dialect.H2Dialect
+2. Create config file at `src/main/resources/config.properties` with the following contents:
 
-hibernate.connection.username = sa
-hibernate.connection.password = sa
-hibernate.c3p0.min_size=1
-hibernate.c3p0.max_size=4
-hibernate.c3p0.timeout=3
-hibernate.c3p0.max_statements=50
+```properties
+#The actual microservice url
+app.services.persons.url=http://localhost:8080/app/persons 
+```
 
-hibernate.hbm2ddl.auto=update
-db-entities-packages=com.app
 Create Model with the following contents:
 
 package com.app.person;
