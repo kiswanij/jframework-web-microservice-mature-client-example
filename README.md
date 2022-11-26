@@ -9,7 +9,7 @@ PrimeFaces and a Mature Microservices backend.
 - [Create Mature Microservice](https://framework.smart-api.com/tutorials/java-maven-tutorial.html)
 - Run the Mature Microservice
 
-## Face Web Content 
+## Project Main Contents 
 Steps: 
 1. Maven project with [pom.xml](pom.xml)
   > *Note*: If you are using Eclipse, be sure to refresh your project (select your project→ right click→ Maven→ Update Project)
