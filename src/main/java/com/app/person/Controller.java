@@ -3,7 +3,7 @@ package com.app.person;
 import java.util.List;
 import java.util.Vector;
 
-import com.jk.web.faces.mb.JKWebController;
+import com.jk.web.faces.controllers.JKWebController;
 
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Named;
@@ -11,7 +11,7 @@ import jakarta.inject.Named;
 @Named("controller")
 @ViewScoped
 public class Controller extends JKWebController {
-	ServiceClient client=new ServiceClient();
+	ServiceClient client = new ServiceClient();
 	Model model;
 	List<Model> modelList;
 	List<Model> filterList;
@@ -33,11 +33,11 @@ public class Controller extends JKWebController {
 
 	public String update() {
 		client.update(model);
-		int id=getModel().getId();
+		int id = getModel().getId();
 		success("Updated Successfully");
 		refresh();
-		//to ensure getting updated version from DB
-		this.model=client.find(id+"");
+		// to ensure getting updated version from DB
+		this.model = client.find(id + "");
 		return null;
 	}
 
