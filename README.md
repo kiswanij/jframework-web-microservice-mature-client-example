@@ -2,7 +2,7 @@
 _Last updated: 2022-11-26_
 
 
-This repository contains a _JKFramework-WebStack_ example that communicates with a Mature microservice backend.
+This repository contains a _JFramework-WebStack_ example that communicates with a Mature microservice backend.
 
 ## Prerequisites:
 - JDK 17+ Installed
